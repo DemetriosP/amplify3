@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyapp3b4272f96": {
+    "amplifyapp95341fdd": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -26,7 +26,7 @@
     }
   },
   "api": {
-    "amplifyapp3": {
+    "amplifyapp": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -42,18 +42,10 @@
       }
     }
   },
-  "function": {
-    "S3Trigger7733ebfa": {
-      "service": "Lambda",
-      "providerPlugin": "awscloudformation",
-      "build": true
-    }
-  },
   "storage": {
     "imagestorage": {
       "service": "S3",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
+      "providerPlugin": "awscloudformation"
     }
   }
 }

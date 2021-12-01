@@ -1,16 +1,14 @@
 {
-  "version": "1",
-  "cognitoConfig": {
-    "identityPoolName": "amplifyapp3b4272f96_identitypool_b4272f96",
+    "identityPoolName": "amplifyapp95341fdd_identitypool_95341fdd",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplifb4272f96",
-    "userPoolName": "amplifyapp3b4272f96_userpool_b4272f96",
+    "resourceNameTruncated": "amplif95341fdd",
+    "userPoolName": "amplifyapp95341fdd_userpool_95341fdd",
     "autoVerifiedAttributes": [
-      "email"
+        "email"
     ],
     "mfaConfiguration": "OFF",
     "mfaTypes": [
-      "SMS Text Message"
+        "SMS Text Message"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
@@ -20,26 +18,38 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-      "email"
+        "email"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [
-      "email"
+        "email"
     ],
     "userpoolClientReadAttributes": [
-      "email"
+        "email"
     ],
-    "userpoolClientLambdaRole": "amplifb4272f96_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplif95341fdd_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "b4272f96",
-    "resourceName": "amplifyapp3b4272f96",
+    "sharedId": "95341fdd",
+    "resourceName": "amplifyapp95341fdd",
     "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
     "useDefault": "default",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
-  }
+    "useEnabledMfas": true,
+    "dependsOn": []
 }
